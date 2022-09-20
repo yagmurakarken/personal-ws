@@ -1,0 +1,17 @@
+.ya-footer-container {
+    background-color: rgb(236, 236, 236);
+    width: 100%;
+
+    .ya-footer {
+        .ya-footer-name {
+            font-size: 18px;
+            font-weight: 600px;
+            color: black;
+        }
+
+        .ya-footer-info {
+            font-size: 14px;
+            color: rgba(0, 0, 0, 0.361);
+        }
+    }
+}

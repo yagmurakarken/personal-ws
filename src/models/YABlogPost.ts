@@ -1,6 +1,7 @@
 export type YABlogPostType = "paper" | "diary" | "lecture_notes";
 
 export type YABlogPost = {
+    id: string,
     image: string,
     title: string,
     date: number,
@@ -9,6 +10,7 @@ export type YABlogPost = {
 }
 
 export const example_blog: YABlogPost = {
+    id: new Date().getTime().toString(),
     image: "https://images.unsplash.com/photo-1546375982-c22276aa12f0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1187&q=80",
     title: "The model can perform rapid task in encyclopedic knowledge tasks",
     date: 1663575530,

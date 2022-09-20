@@ -1,0 +1,50 @@
+.ya-blog-view {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+    .ya-blog-view-cover-container {
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        left: 0;
+        right: 0;
+        overflow: hidden;
+        height: 300px;
+        border-radius: 5px;
+
+        .ya-blog-view-cover {
+            width: 150%;
+            height: 150%;
+            transform: translate(-25%, -25%);
+            object-fit: cover;
+            filter: blur(10px) saturate(1.5);
+            -webkit-filter: blur(10px) saturate(1.5);
+            -moz-filter: blur(10px) saturate(1.5);
+            -o-filter: blur(10px) saturate(1.5);
+            -ms-filter: blur(10px) saturate(1.5);
+        }
+    }
+
+    .ya-blog-view-title {
+        font-size: clamp(24px, 4vw, 42px);
+        font-weight: 500;
+    }
+
+    .ya-blog-view-date {}
+
+    .ya-blog-view-image {
+        margin-top: 100px;
+        margin-left: clamp(5px, 5%, 20px);
+        width: calc(100% - (clamp(5px, 5%, 20px) * 2));
+        max-width: 500px;
+        height: auto;
+        min-height: 300px;
+        //height: 500px;
+        object-fit: cover;
+        border-radius: 5px;
+        box-shadow: 0 0 10px 2px #ffffff50;
+    }
+
+    .ya-blog-view-content {}
+}
