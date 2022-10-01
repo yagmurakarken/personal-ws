@@ -16,7 +16,6 @@ const HomePage = () => {
     return (
         <div className="ya-home-page-container">
             <div className="container">
-                <div className="py-2"></div>
                 <Grid>
                     {posts.map(post => <Grid.Col span={12} sm={6} lg={4} ><BlogPostCard data={post} /></Grid.Col>)}
                 </Grid>

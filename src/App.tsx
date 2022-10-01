@@ -9,10 +9,12 @@ export type Page = "home" | "about";
 
 const App = () => {
   return (
-    <div>
+    <div className="d-flex flex-column" style={{ minHeight: "100vh" }}>
       <Navbar />
+      <div className="py-5"></div>
       <Outlet />
       <div className="py-2"></div>
+      <div className="mt-auto"></div>
       <Footer />
     </div>
   );

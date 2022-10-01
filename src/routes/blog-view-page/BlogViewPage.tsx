@@ -36,8 +36,6 @@ const BlogViewPage = () => {
 
     return (
         <div className='container'>
-            <div className="py-4"></div>
-            <div className="py-2"></div>
             {isLoading ? drawLoadingAnimation() : (blogPost ? <BlogView data={blogPost} /> : <p>error</p>)}
 
         </div>
