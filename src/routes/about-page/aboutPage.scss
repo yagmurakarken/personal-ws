@@ -7,7 +7,7 @@
 
     .ya-about-pic {
         max-width: 400px;
-        height: min-content;
+        height: auto;
         object-fit: contain;
         border-radius: 10px;
         flex: 1;
@@ -16,6 +16,5 @@
     .ya-about-content {
         max-width: 600px;
         flex: 1 400px;
-        height: min-content;
     }
 }
